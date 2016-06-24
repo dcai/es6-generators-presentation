@@ -2,7 +2,7 @@
  * Understand how yield produce and receive data
  *
  */
-function *foo(x) {
+function* foo(x) {
     console.info(`x: ${x}`);
     var y = 2 * (yield (x + 1));
     console.info(`y: ${y}`);
@@ -12,6 +12,6 @@ function *foo(x) {
 }
 
 const iter = foo(9);
-//console.info(iter.next(1));
-//console.info(iter.next(6));
-//console.info(iter.next(7));
+console.info(iter.next());
+console.info(iter.next(6));
+console.info(iter.next(7));
