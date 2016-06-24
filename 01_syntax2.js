@@ -1,5 +1,5 @@
 /**
- * See the syntax
+ * Get to know the syntax part 2
  */
 function* gen() {
   const x = yield (1 + 1);

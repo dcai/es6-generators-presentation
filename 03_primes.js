@@ -11,9 +11,10 @@ function* primes_generator() {
 
 var nums = primes_generator();
 
-console.log([...take(12, nums)]);
-console.log([...take(3, nums)]);
-console.log([...take(5, nums)]);
+console.info(take(12, nums));
+//console.log([...take(12, nums)]);
+//console.log([...take(3, nums)]);
+//console.log([...take(5, nums)]);
 
 // helpers
 function* take(length, iterable) {
